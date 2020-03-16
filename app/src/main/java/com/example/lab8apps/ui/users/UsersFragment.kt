@@ -1,18 +1,19 @@
 package com.example.lab8apps.ui.users
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.net.toUri
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
-import androidx.navigation.findNavController
+import com.bumptech.glide.Glide
 import com.example.lab8apps.R
 import com.example.lab8apps.databinding.UsersFragmentBinding
+
 
 class UsersFragment : Fragment() {
 
@@ -36,7 +37,7 @@ class UsersFragment : Fragment() {
             binding.textViewUsername.text = name
         })
         viewModel.urlAvatar.observe(this.viewLifecycleOwner, Observer { urlAvatar ->
-            binding.imageViewAvatar.setImageURI(urlAvatar.toUri())
+            Glide.with(this).load(urlAvatar).into(binding.imageViewAvatar)
         })
         binding.goToRepos.setOnClickListener { view ->
             if (true) {
