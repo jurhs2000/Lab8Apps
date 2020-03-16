@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Lab8Apps</string>
+    <string name="see_repos">Ver repositorios</string>
+    <string name="et_username">Escriba el nombre de usuario GitHub</string>
+    <string name="avatar_image">avatar_image</string>
+    <string name="search">Buscar</string>
 </resources>
