@@ -1,6 +1,8 @@
 package com.example.lab8apps.ui.repos
 
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,6 +30,10 @@ class ReposAdapter internal constructor(context: Context): RecyclerView.Adapter<
         val current = repos[position]
         holder.name.text = current.name
         holder.description.text = current.description
+        holder.itemView.setOnClickListener{
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("${current.htmlUrl}"))
+            holder.itemView.context.startActivity(intent)
+        }
     }
 
     internal fun setRepos(repos: List<RepoProperty>) {
