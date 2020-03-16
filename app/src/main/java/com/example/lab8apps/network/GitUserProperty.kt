@@ -1,4 +1,4 @@
-package com.example.lab8apps.ui.repos
+package com.example.lab8apps.network
 
 import com.squareup.moshi.Json
 

@@ -1,7 +1,5 @@
 package com.example.lab8apps.network
 
-import com.example.lab8apps.ui.repos.GitUserProperty
-import com.example.lab8apps.ui.repos.RepoProperty
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Call

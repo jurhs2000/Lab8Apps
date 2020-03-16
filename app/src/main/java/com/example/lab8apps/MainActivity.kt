@@ -10,6 +10,10 @@ import androidx.navigation.ui.setupActionBarWithNavController
 
 class MainActivity : AppCompatActivity() {
 
+    companion object {
+        lateinit var user: String
+    }
+
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var navController: NavController
 

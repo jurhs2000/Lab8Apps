@@ -4,4 +4,6 @@
     <string name="et_username">Escriba el nombre de usuario GitHub</string>
     <string name="avatar_image">avatar_image</string>
     <string name="search">Buscar</string>
+    <string name="repo_name">Repository Name</string>
+    <string name="repo_des">Repository Description</string>
 </resources>
